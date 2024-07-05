@@ -1,6 +1,8 @@
 export { HTTP, http, HttpApi } from './api/index.ts';
+export { asyncStorage } from './async-storage/async-storage.ts';
 export {
     ApiEndpoints,
+    AsyncStorageKey,
     ContentType,
     HttpHeader,
     SliceName,

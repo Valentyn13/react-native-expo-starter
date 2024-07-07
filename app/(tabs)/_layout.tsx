@@ -1,9 +1,6 @@
-import { Provider } from 'react-redux';
 import { Tabs } from 'expo-router';
 
-import { store } from '@store/index';
-
-const RootLayout = () => {
+const TabsLayout = () => {
     return (
         <Tabs
             screenOptions={{
@@ -16,13 +13,6 @@ const RootLayout = () => {
                 options={{ tabBarLabel: 'Settings' }}
             />
         </Tabs>
-    );
-};
-const TabsLayout = () => {
-    return (
-        <Provider store={store.instance}>
-            <RootLayout />
-        </Provider>
     );
 };
 

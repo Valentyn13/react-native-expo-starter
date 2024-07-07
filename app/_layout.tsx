@@ -1,15 +1,13 @@
-import { Stack } from 'expo-router';
+import { Provider } from 'react-redux';
+import { Slot } from 'expo-router';
+
+import { store } from '@store/index';
 
 const TabsLayout = () => {
     return (
-        <Stack>
-            <Stack.Screen
-                name="(tabs)"
-                options={{
-                    headerShown: false,
-                }}
-            />
-        </Stack>
+        <Provider store={store.instance}>
+            <Slot />
+        </Provider>
     );
 };
 

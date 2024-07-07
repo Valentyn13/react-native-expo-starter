@@ -1,20 +1,5 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { MainScreen } from '@screens/index';
 
-const App = () => {
-    return (
-        <View style={styles.container}>
-            <Text>App entry</Text>
-        </View>
-    );
-};
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-});
+const App = () => <MainScreen />;
 
 export default App;

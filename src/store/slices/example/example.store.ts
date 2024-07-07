@@ -5,5 +5,5 @@ const allActions = {
     getExampleData,
 };
 
-export { allActions as actions };
-export { reducer } from './slice.ts';
+export { allActions as exampleActions };
+export { reducer as exampleReducer } from './slice.ts';

@@ -1,7 +1,7 @@
 import { Provider } from 'react-redux';
 import { Tabs } from 'expo-router';
 
-import { store } from '../../src/store/store';
+import { store } from '@store/index';
 
 const RootLayout = () => {
     return (

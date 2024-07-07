@@ -1,1 +1,4 @@
 build
+.expo
+.husky
+node-moduless

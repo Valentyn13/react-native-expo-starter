@@ -5,8 +5,9 @@ import {
     type UnknownAction,
 } from '@reduxjs/toolkit';
 
-import { exampleApi } from '../api/example/example-api.ts';
-import { reducer as exampleReducer } from '../store/slices/example/example.store.ts';
+import { exampleReducer } from '../slices';
+
+import { exampleApi } from '@api/index.ts';
 
 export type RootReducer = {
     example: ReturnType<typeof exampleReducer>;

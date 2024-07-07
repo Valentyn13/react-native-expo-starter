@@ -1,4 +1,4 @@
-import { store } from '../../../store/store';
+import { store } from '@store/index';
 
 type AsyncThunkConfig = {
     state: ReturnType<typeof store.instance.getState>;

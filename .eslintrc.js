@@ -19,16 +19,18 @@ module.exports = {
                         groups: [
                             // Packages `react` related packages come first.
                             ['^react', '^@?\\w'],
-                            // Internal packages.
-                            ['^(@|shared)(/.*|$)'],
-                            // Side effect imports.
-                            ['^\\u0000'],
                             // Parent imports. Put `..` last.
                             ['^\\.\\.(?!/?$)', '^\\.\\./?$'],
                             // Other relative imports. Put same-folder imports and `.` last.
                             ['^\\./(?=.*/)(?!/?$)', '^\\.(?!/?$)', '^\\./?$'],
-                            // svg, png, jpeg, imports.
-                            ['^.+\\.(png|svg|jpg|jpeg,webp)$'],
+                            // Internal packages.
+                            ['^(@screens)(/.*|$)'],
+                            ['^(@store)(/.*|$)'],
+                            ['^(@api)(/.*|$)'],
+                            ['^(@shared)(/.*|$)'],
+                            ['^(@assets)(/.*|$)'],
+                            // Side effect imports.
+                            ['^\\u0000'],
                         ],
                     },
                 ],

@@ -2,6 +2,14 @@
     "extends": "expo/tsconfig.base",
     "compilerOptions": {
         "allowImportingTsExtensions": true,
-        "strict": true
+        "strict": true,
+        "noEmit": true,
+        "paths": {
+            "@shared/*": ["./src/shared/*"],
+            "@api/*": ["./src/api/*"],
+            "@screens/*" : ["./src/screens/*"],
+            "@assets/*": ["./assets/*"],
+            "@store/*": ["./src/store/*"],
+        }
     }
 }

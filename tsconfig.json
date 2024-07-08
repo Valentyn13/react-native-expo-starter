@@ -11,5 +11,6 @@
             "@assets/*": ["./assets/*"],
             "@store/*": ["./src/store/*"],
         }
-    }
+    },
+    "include": ["./","./declaration.d.ts"]
 }
